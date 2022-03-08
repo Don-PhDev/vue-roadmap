@@ -12,6 +12,13 @@
          'sold-out': isSoldOut
       }">Object conditional
     </h3>
+    <h3 :style="{
+      color: highlight,
+      fontSize: headerSize + 'px'
+    }">Inline Style
+    </h3>
+    <h3 :style="headerStyles">Object style</h3>
+    <div :style="[baseStyle, successStyle]">Array style</div>
   </div>
 </template>
 
@@ -25,7 +32,21 @@ export default {
       isDisabled: true,
       status: "danger",
       isPromoted: true,
-      isSoldOut: true,
+      isSoldOut: false,
+      highlight: "orange",
+      headerSize: 50,
+      headerStyles: {
+        color: "orange",
+        fontSize: "50px",
+      },
+      baseStyle: {
+        fontSize: "50px",
+        border: "1px solid yellow"
+      },
+      successStyle: {
+        color: "yellowgreen",
+        border: "1px solid black"
+      }
     }
   },
 }
