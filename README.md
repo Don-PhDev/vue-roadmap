@@ -5,6 +5,7 @@
 npm install -g @vue/cli
 vue create road-map
 cd road-map
+npm install
 npm run serve
 ```
 
