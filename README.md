@@ -2,7 +2,10 @@
 
 ## Project setup
 ```
-npm install
+npm install -g @vue/cli
+vue create road-map
+cd road-map
+npm run serve
 ```
 
 ### Compiles and hot-reloads for development
