@@ -2,6 +2,8 @@
   <div>
     <h1>{{ greet }} {{ name }}</h1>
     <p v-html="language" />
+    <h3 :id="headingId">Heading</h3>
+    <button :disabled="isDisabled">Click me</button>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ export default {
       greet: "Hello",
       name: "Don",
       language: "<b>Vue JS</b>",
+      headingId: "heading",
+      isDisabled: true,
     }
   },
 }
