@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ greet }} {{ name }}</h1>
-    <h3 v-text="language" />
+    <p v-html="language" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     return {
       greet: "Hello",
       name: "Don",
-      language: "Vue JS",
+      language: "<b>Vue JS</b>",
     }
   },
 }
